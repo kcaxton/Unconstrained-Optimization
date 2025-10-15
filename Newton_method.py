@@ -39,7 +39,7 @@ for k in range(max_iter):
         break
 
     try:
-        # Solve H * p = g  →  p = H⁻¹ * g
+        
         p = np.linalg.solve(H, g)
     except np.linalg.LinAlgError:
         print("Hessian is singular — cannot invert. Stopping.")

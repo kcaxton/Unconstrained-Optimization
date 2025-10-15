@@ -71,7 +71,7 @@ for k in range(max_iter):
     step_norm = np.linalg.norm(new_point - point)
     res_norm = np.linalg.norm(r_val)
 
-    print(f"Iter {k+1}: x = [{new_point[0]:.6f}, {new_point[1]:.6f}], ||J^T r|| = {g_norm:.4e}, ||r|| = {res_norm:.4e}, |step| = {step_norm:.4e}")
+    print(f"Iter {k+1}: x = [{new_point[0]:.3f}, {new_point[1]:.3f}], ||J^T r|| = {g_norm:.4f}, ||r|| = {res_norm:.3f}, |step| = {step_norm:.3f}")
 
     # Convergence by step size too
     if step_norm < tol:
